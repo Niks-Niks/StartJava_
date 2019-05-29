@@ -1,4 +1,11 @@
-﻿create table tea (
+CREATE TABLE jeager (
 	id integer,
-	name text,
-	lastName text);
+	modelName text,
+	mark text,
+	height integer,
+	weight integer,
+	status text,
+	origin text,
+	launch text,
+	kaijukill integer
+);
