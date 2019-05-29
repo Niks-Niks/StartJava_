@@ -1,0 +1,9 @@
+1. select * from jaeger;
+2. select * from jaeger where status != 'destroyed';
+3. select * from jaeger where mark = 'Mark-1' and mark = 'Mark-6';
+4. select * from jaeger order by mark desc; 
+5. select * from jaeger where launch = (select MAX(launch) from jaeger);
+6. select * from jaeger where kaijuKill = (select MAX(kaijuKill) from jaeger); /  select * from jaeger where kaijuKill = (select MIN(kaijuKill) from jaeger);
+7. select AVG(weight) from jaeger;
+8. update jaeger set kaijukill = kaijukill + 1 where status != 'destroyed';
+9. delete from jaeger where status = 'destroyed';
