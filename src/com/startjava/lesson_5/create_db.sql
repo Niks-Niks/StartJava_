@@ -1,11 +1,11 @@
 CREATE TABLE jeager (
-	id integer,
-	modelName text,
-	mark text,
-	height integer,
-	weight integer,
-	status text,
-	origin text,
-	launch text,
-	kaijukill integer
+	id	   SERIAL PRIMARY KEY,
+	modelName  TEXT,
+	mark       TEXT,
+	height     DECIMAL,
+	weight     DECIMAL,
+	status     TEXT,
+	origin     TEXT,
+	launch     DATE,
+	kaijukill  INTEGER
 );
